@@ -200,7 +200,7 @@ end
   def response_from_page_with_rjs
     content_type = @response.content_type
 
-    if content_type && Mime::JS =~ content_type
+    if content_type && Mime[:js] =~ content_type
       body = @response.body.dup
       root = HTML::Node.new(nil)
 
