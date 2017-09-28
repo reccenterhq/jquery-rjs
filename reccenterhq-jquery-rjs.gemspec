@@ -6,7 +6,7 @@
 
 Gem::Specification.new do |s|
   s.name = "reccenterhq-jquery-rjs"
-  s.version = "0.2.0"
+  s.version = ""
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
@@ -37,14 +37,14 @@ Gem::Specification.new do |s|
     s.specification_version = 4
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<jquery-rjs>, [">= 0"])
+      s.add_runtime_dependency(%q<reccenterhq-jquery-rjs>, [">= 0"])
       s.add_development_dependency(%q<mocha>, [">= 0"])
     else
-      s.add_dependency(%q<jquery-rjs>, [">= 0"])
+      s.add_dependency(%q<reccenterhq-jquery-rjs>, [">= 0"])
       s.add_dependency(%q<mocha>, [">= 0"])
     end
   else
-    s.add_dependency(%q<jquery-rjs>, [">= 0"])
+    s.add_dependency(%q<reccenterhq-jquery-rjs>, [">= 0"])
     s.add_dependency(%q<mocha>, [">= 0"])
   end
 end
