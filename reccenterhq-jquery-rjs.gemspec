@@ -32,20 +32,4 @@ Gem::Specification.new do |s|
   s.homepage = "http://github.com/reccenterhq/jquery-rjs"
   s.rubygems_version = "2.4.6"
   s.summary = "Add RJS for jQuery to Rails 3.1+ apps (this repo would probably be the only fork in the world that supports Rails 4)"
-
-  if s.respond_to? :specification_version then
-    s.specification_version = 4
-
-    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<reccenterhq-jquery-rjs>, [">= 0"])
-      s.add_development_dependency(%q<mocha>, [">= 0"])
-    else
-      s.add_dependency(%q<reccenterhq-jquery-rjs>, [">= 0"])
-      s.add_dependency(%q<mocha>, [">= 0"])
-    end
-  else
-    s.add_dependency(%q<reccenterhq-jquery-rjs>, [">= 0"])
-    s.add_dependency(%q<mocha>, [">= 0"])
-  end
 end
-
