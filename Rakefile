@@ -11,7 +11,7 @@ begin
     gem.homepage = "http://github.com/reccenterhq/jquery-rjs"
     gem.authors = ["Reccenter HQ", "Akira Matsuda", "Aaron Eisenberger"]
     gem.files =  FileList["[A-Z]*.rb","{bin,generators,javascripts,lib,rails,tasks}/**/*"]
-end
+  end
   Jeweler::GemcutterTasks.new
 rescue LoadError
   puts "Jeweler (or a dependency) not available. Install it with: sudo gem install jeweler"
