@@ -1,10 +1,18 @@
-require 'rake/testtask'
+require 'rubygems'
+require 'rake'
 
-task :default => :test
-
-Rake::TestTask.new do |t|
-  t.libs << 'test'
-  t.test_files = Dir.glob('test/*_test.rb') + Dir.glob('test/{controller,template}/**/*_test.rb')
-  t.warning = true
-  t.verbose = true
+begin
+  require 'jeweler'
+  Jeweler::Tasks.new do |gem|
+    gem.name = "reccenterhq-jquery-rjs"
+    gem.summary = "Add RJS for jQuery to Rails 3.1+ apps (this repo would probably be the only fork in the world that supports Rails 4)"
+    gem.description = "Add RJS for jQuery to Rails 3.1+ apps (this repo would probably be the only fork in the world that supports Rails 4)"
+    gem.email = "jerrod@reccenter.com"
+    gem.homepage = "http://github.com/reccenterhq/jquery-rjs"
+    gem.authors = ["Reccenter HQ", "Akira Matsuda", "Aaron Eisenberger"]
+    gem.files =  FileList["[A-Z]*.rb","{bin,generators,javascripts,lib,rails,tasks}/**/*"]
+end
+  Jeweler::GemcutterTasks.new
+rescue LoadError
+  puts "Jeweler (or a dependency) not available. Install it with: sudo gem install jeweler"
 end

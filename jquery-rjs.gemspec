@@ -1,10 +1,10 @@
 Gem::Specification.new do |spec|
   spec.name     = 'jquery-rjs'
-  spec.version  = '0.1.1'
-  spec.summary  = 'jQuery and RJS for Ruby on Rails'
-  spec.homepage = 'http://github.com/aaronchi/jquery-rjs'
-  spec.author   = 'Aaron Eisenberger'
-  spec.email    = 'aaronchi@gmail.com'
+  spec.version  = '0.2.0'
+  spec.summary  = 'jQuery and RJS for Ruby on Rails 4'
+  spec.homepage = 'http://github.com/reccenterhq/jquery-rjs'
+  spec.author   = 'Reccenter HQ'
+  spec.email    = 'jerrod@reccenter.com'
 
   spec.files = %w(README Rakefile Gemfile) + Dir['lib/**/*', 'vendor/**/*', 'test/**/*']
 
